@@ -2,11 +2,29 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>hola mundo</title>
+    <title>Hola mundo</title>
+    <style>
+      #titulo {
+      text-align: center;
+      }
+      .descripcion {
+      background-color: silver;
+      }
+      p {
+      font-size: x-large;
+      color: black;  
+      }
+      p strong {
+      color: blue;
+      }
+      p.descripcion {
+      background-color: white;
+      }
+    </style>
   </head>
-  <body style="  background-color: red;" onclick="alert('quita tus manos de encima')">
+  <body class= "descripcion" style="  background-color: red;" onclick="alert('quita tus manos de encima')">
     <!-- esto es la definición de hola mundo -->
-    <p id="titulo">hola <strong>mundo</strong><br>
+    <p id="titulo">Hola <strong>mundo</strong><br>
     </p>
     <p class="descripcion" title="esto es un hola mundo"> En informática, un
       programa Hola mundo es el que imprime el texto «¡Hola, mundo!» en un
