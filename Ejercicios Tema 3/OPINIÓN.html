@@ -107,109 +107,109 @@
         <h1 style="color: red;">TU OPINIÓN CUENTA</h1>
       </header>
       <article>
-        <h3>ENCUESTA SOCIOLÓGICA</h3>
+        <h3>ENCUESTA DE CALIDAD PARA EMPRESAS</h3>
         <form method="get" action="https://rawgit.com/cancerbero01/disenoWeb/master/ejerciciosTema3/reOpinion.html">
           <fieldset>
           <legend style="color: darkblue;">
-          INFORMACIÓN PERSONAL
+          INFORMACIÓN DE LA EMPRESA
           </legend>
           <p>
-          <label for="Nacionalidad">¿Cuál es su nacionalidad?</label>
+          <label for="Nacionalidad">Ámbito del negocio</label>
           </p><p>    
           </p>
-          <input name="Nacionalidad" id="Española" value="Española" type="radio">  
-          <label for="España" style="color: darkgreen;">Española</label>
-          <input name="Nacionalidad" id="Otra" value="Otra" required="" type="radio">  
-          <label for="Otra" style="color: darkgreen;">Otra</label>
+          <input name="Ambito" id="Nacional" value="Nacional" type="radio">  
+          <label for="Nacional" style="color: darkgreen;">Nacional</label>
+          <input name="Ambito" id="Internacional" value="Internacional" required="" type="radio">  
+          <label for="Internacinal" style="color: darkgreen;">Internacional</label>
           <p></p>
           <p>
-          <label for="nombrePropio2">¿Cuál es su nombre?</label>
+          <label for="nombrePropio2">Nombre de la empresa</label>
           </p>
           <p>  
-          <input name="Nombre" id="nombrePropio2" required="" autofocus="" type="text">
+          <input name="Empresa" id="nombrePropio2" required="" autofocus="" type="text">
           </p>
           <p>
-          <label for="correo">¿Cuál es su correo electrónico?</label>
+          <label for="correo">Correo electrónico de la empresa</label>
           </p>
           <p>
           <input name="Correo" id="correo" required="" type="email">
           </p>
-          <label for="edad">Indique su edad (sólo mayores de edad)</label>
+          <label for="Trabajadores">Número de trabajadores de la empresa</label>
           <p>
-          <input name="Edad" id="edad" min="18" max="99" step="1" required="" type="number">
+          <input name="Empleados" id="trabajadores" min="1" max="9999" step="1" required="" type="number">
           </p>
-          <label for="hijos">Número de hijos</label>
+          <label for="dias">¿Cuántos días a la semana está la empresa operativa?</label>
           <p>
-          <input name="Hijos" id="hijos" value="4" min="0" max="9" oninput="media.value = hijos.value" type="range">
-          <output name="numhijos" id="media" style="color: darkgreen;">4</output>       
+          <input name="Dias" id="dias" value="4" min="1" max="7" oninput="media.value = dias.value" type="range">
+          <output name="numdias" id="media" style="color: darkgreen;">4</output>       
           </p>
           </fieldset>
           <p>
           </p>
           <fieldset>
           <legend style="color: darkblue;">
-          DATOS SOCIOLÓGICOS  
-          </legend> <label>¿Cuáles son sus ingresos anuales?</label> 
+          OTROS DATOS  
+          </legend> <label>¿Cuál es su gasto medio anual en materiales de impresión?</label> 
           <p>
           </p>  
-          <input name="Ingresos" value="Muyalto" id="Muyalto" type="radio">
+          <input name="Gasto" value="Muyalto" id="Muyalto" type="radio">
           <label for="muyalto" style="color: darkgreen;">más de 75.000 €</label> 
           <p>
           </p>
-          <input name="Ingresos" value="Alto" id="Alto" type="radio">
+          <input name="Gasto" value="Alto" id="Alto" type="radio">
           <label for="alto" style="color: darkgreen;">de 40.000 a 75.000 €</label>
           <p>
           </p>
-          <input name="Ingresos" value="Medio" id="Medio" type="radio">
+          <input name="Gasto" value="Medio" id="Medio" type="radio">
           <label for="medio" style="color: darkgreen;">de 15.000 a 39.999 €</label>
           <p>
           </p>
-          <input name="Ingresos" value="Bajo" id="Bajo" required="" type="radio">
+          <input name="Gasto" value="Bajo" id="Bajo" required="" type="radio">
           <label for="bajo" style="color: darkgreen;">menos de 15.000 €</label>
           <p>
-          </p> <label>Marque las opciones acorde con su estilo de vida</label>
+          </p> <label>Marque los servicios más requeridos</label>
           <p>
           </p> 
-          <input name="Aficiones1" value="Futbol" id="Futbol" type="checkbox">
-          <label for="futbol" style="color: darkgreen;">Ver fútbol</label>
+          <input name="Servicios1" value="Copistería" id="Copistería" type="checkbox">
+          <label for="Copistería" style="color: darkgreen;">Copistería</label>
           <p>
           </p>
-          <input name="Aficiones2" value="Siesta" id="Siesta" type="checkbox">  
-          <label for="siesta" style="color: darkgreen;">Echarse la siesta</label>  
+          <input name="Servicios2" value="Encuadernaciones" id="Encuadernaciones" type="checkbox">  
+          <label for="Encuadernaciones" style="color: darkgreen;">Encuadernaciones</label>  
           <p>
           </p>
-          <input name="Aficiones3" value="Toros" id="Toros" type="checkbox">  
-          <label for="toros" style="color: darkgreen;">Ir a los toros</label>
+          <input name="Servicios3" value="Planos" id="Planos" type="checkbox">  
+          <label for="Planos" style="color: darkgreen;">Planos</label>
           <p>
           </p>
-          <input name="Aficiones4" value="Tapas" id="Tapas" type="checkbox">  
-          <label for="tapas" style="color: darkgreen;">Salir de tapas</label> 
+          <input name="Servicios4" value="Cartelería" id="Cartelería" type="checkbox">  
+          <label for="Cartelería" style="color: darkgreen;">Cartelería</label> 
           <p>
           </p>
-          <input name="Aficiones5" value="Flamenco" id="Flamenco" type="checkbox">  
-          <label for="flamenco" style="color: darkgreen;">Música flamenca</label> 
+          <input name="Servicios5" value="Dípticos" id="Dípticos" type="checkbox">  
+          <label for="Dípticos" style="color: darkgreen;">Dípticos</label> 
           <p>
           </p>
-          <input name="Aficiones6" value="Dieta" id="Dieta" type="checkbox">  
-          <label for="dieta" style="color: darkgreen;">La dieta mediterránea</label> 
+          <input name="Servicios6" value="Trípticos" id="Trípticos" type="checkbox">  
+          <label for="Trípticos" style="color: darkgreen;">Trípticos</label> 
           <p>
           </p>
-          <input name="Aficiones7" value="Descargas" id="Descargas" type="checkbox">  
-          <label for="descargas" style="color: darkgreen;">Descargas piratas online</label>
+          <input name="Servicios7" value="3D" id="3D" type="checkbox">  
+          <label for="3D" style="color: darkgreen;">Impresión 3D</label>
           <p>
           </p>  
-          <input name="Aficiones8" value="Cursos" id="Cursos" type="checkbox">  
-          <label for="cursos" style="color: darkgreen;">Hacer cursos online</label>  
+          <input name="Servicios8" value="Ilustraciones" id="Ilustraciones" type="checkbox">  
+          <label for="Ilustraciones" style="color: darkgreen;">Ilustraciones HD</label>  
           <p>
           </p> 
-          <label>Señale sus inclinaciones políticas</label>
+          <label>Valore nuestro servicio</label>
           <p>
           </p>  
-          <select name="Politica" id="Politica">
-          <option value="Ninguna" style="color: darkgreen;">Ninguna</option>
-          <option value="Izquierda" style="color: darkgreen;">Izquierda</option>
-          <option value="Centro" style="color: darkgreen;">Centro</option>
-          <option value="Derecha" style="color: darkgreen;">Derecha</option>
+          <select name="Calidad" id="Servicio">
+          <option value="Perfecto" style="color: darkgreen;">Perfecto</option>
+          <option value="Bueno" style="color: darkgreen;">Bueno</option>
+          <option value="Normal" style="color: darkgreen;">Normal</option>
+          <option value="Malo" style="color: darkgreen;">Malo</option>
           </select>
           <p>
           <label for="obser">Observaciones</label>
