@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+	
+  <title>Formulario</title>
+  <style>
+      body {
+        width: 80%;    
+        margin: 0 auto;
+        font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;   
+        background: #eee9df url(../images/tile1.png) center top repeat;
+      }
+      h1 {
+        font: 18pt Helvetica,"Helvetica neue", Arial, sans-serif;    
+        text-transform: uppercase;
+        color: #e5b7ad;    
+        padding-top: 30px ;
+      }
+      body > header {    
+        padding:0px;
+        text-align: center;  
+        overflow: auto;
+      }
+      body > header > h1 {
+        float:left;
+        width: 75%;
+        font: 32pt Helvetica,"Helvetica neue", Arial, sans-serif;    
+        text-align: center;
+      }
+      body > header > picture {
+        float:left;
+        width: 20%;
+      }
+      body > header > picture > img {
+        width: 100%;
+      }
+
+      body > section {	
+        float: right;
+        width: 70%;	
+        padding-left: 20px;
+        margin: 0 0 20px 0px;	
+        border-left: 2px dotted #b2a497;
+      }
+      body > section h2 {
+        font: 14pt Helvetica,"Helvetica neue", Arial, sans-serif;	
+        font-weight: lighter;
+        text-transform: uppercase;	color: #493831;
+        padding-bottom: 10px;	
+	margin: 0;
+      }      
+      nav { 
+	text-align: center;		
+      }
+      nav a{
+	padding: 30px;
+      }
+      aside{	
+        float: left;
+        width: 20%;	
+        min-height: 480px;
+        margin: 0 0 20px 0;
+      }
+      footer{	clear:both;
+        height: 100px;	
+        padding: 10px;
+        color:#200f08 ;	
+        background:#ddd3bf;
+          /*Opacity*/
+        filter:alpha(opacity=50); /* msie */  	
+        -moz-opacity: 0.50; /* firefox 1.0 */  
+        -khtml-opacity: 0.50; /* webkit */  	
+        opacity: 0.50; /* css 3 */
+        /*Gradient*/
+        background-image: -moz-linear-gradient(top, #ddd3bf, #bcae91); /* FF3.6 */	
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ddd3bf),color-stop(1, #bcae91)); /* Saf4+, Chrome *
+        filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddd3bf', EndColorStr='#bcae91');   /* IE6,IE7 */	
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddd3bf', EndColorStr='#bcae91')"; /* IE8 */
+        /*Round corners*/
+        -moz-border-radius: 12px; /* FF1+ */	-webkit-border-radius: 12px; /* Saf3+, Chrome */
+        border-radius: 12px; /* Opera 10.5, IE 9 */
+      }
+        form div 
+      {
+        padding:10px;
+      }
+      form div > label
+      {
+        display: block;
+        width: 100%;
+      }
+      
+</style>
+</head>
+<body>
+    <header>
+      <h1 style="color: INDIGO;">BIENVENIDO A LA WEB DE URPES</h1>
+      <picture><img src="https://raw.githubusercontent.com/Urpes/cursodisenoweb/master/Imagenes/logocurso.png" alt="logotipo de mi empresa"></picture>
+    </header>
+    <nav> <a href="https://rawgit.com/Urpes/cursodisenoweb/master/Ejercicios%20Tema%202/NOSOTROS.html">Nosotros</a> <a href="https://rawgit.com/Urpes/cursodisenoweb/master/Ejercicios%20Tema%202/NUESTROS%20SERVICIOS.html">Nuestros Servicios</a> <a href="https://rawgit.com/Urpes/cursodisenoweb/master/Ejercicios%20Tema%202/INDEX.html">Atrás</a> </nav>
+    <section>
+      <header>
+        <h1 style="color: red;">TU OPINIÓN CUENTA</h1>
+      </header>
+      <article>
+        <h3>ENCUESTA SOCIOLÓGICA</h3>
+        <form method="get" action="https://rawgit.com/cancerbero01/disenoWeb/master/ejerciciosTema3/reOpinion.html">
+          <fieldset>
+          <legend style="color: darkblue;">
+          INFORMACIÓN PERSONAL
+          </legend>
+          <p>
+          <label for="Nacionalidad">¿Cuál es su nacionalidad?</label>
+          </p><p>    
+          </p>
+          <input name="Nacionalidad" id="Española" value="Española" type="radio">  
+          <label for="España" style="color: darkgreen;">Española</label>
+          <input name="Nacionalidad" id="Otra" value="Otra" required="" type="radio">  
+          <label for="Otra" style="color: darkgreen;">Otra</label>
+          <p></p>
+          <p>
+          <label for="nombrePropio2">¿Cuál es su nombre?</label>
+          </p>
+          <p>  
+          <input name="NombrePropio" id="nombrePropio2" required="" autofocus="" type="text">
+          </p>
+          <p>
+          <label for="correo">¿Cuál es su correo electrónico?</label>
+          </p>
+          <p>
+          <input name="Correo" id="correo" required="" type="email">
+          </p>
+          <label for="edad">Indique su edad (sólo mayores de edad)</label>
+          <p>
+          <input name="Edad" id="edad" min="18" max="99" step="1" required="" type="number">
+          </p>
+          <label for="hijos">Número de hijos</label>
+          <p>
+          <input name="Hijos" id="hijos" value="4" min="0" max="9" oninput="media.value = hijos.value" type="range">
+          <output name="numhijos" id="media" style="color: darkgreen;">4</output>       
+          </p>
+          </fieldset>
+          <p>
+          </p>
+          <fieldset>
+          <legend style="color: darkblue;">
+          DATOS SOCIOLÓGICOS  
+          </legend> <label>¿Cuáles son sus ingresos anuales?</label> 
+          <p>
+          </p>  
+          <input name="Ingresos" value="Muyalto" id="Muyalto" type="radio">
+          <label for="muyalto" style="color: darkgreen;">más de 75.000 €</label> 
+          <p>
+          </p>
+          <input name="Ingresos" value="Alto" id="Alto" type="radio">
+          <label for="alto" style="color: darkgreen;">de 40.000 a 75.000 €</label>
+          <p>
+          </p>
+          <input name="Ingresos" value="Medio" id="Medio" type="radio">
+          <label for="medio" style="color: darkgreen;">de 15.000 a 39.999 €</label>
+          <p>
+          </p>
+          <input name="Ingresos" value="Bajo" id="Bajo" required="" type="radio">
+          <label for="bajo" style="color: darkgreen;">menos de 15.000 €</label>
+          <p>
+          </p> <label>Marque las opciones acorde con su estilo de vida</label>
+          <p>
+          </p> 
+          <input name="Aficiones1" value="Futbol" id="Futbol" type="checkbox">
+          <label for="futbol" style="color: darkgreen;">Ver fútbol</label>
+          <p>
+          </p>
+          <input name="Aficiones2" value="Siesta" id="Siesta" type="checkbox">  
+          <label for="siesta" style="color: darkgreen;">Echarse la siesta</label>  
+          <p>
+          </p>
+          <input name="Aficiones3" value="Toros" id="Toros" type="checkbox">  
+          <label for="toros" style="color: darkgreen;">Ir a los toros</label>
+          <p>
+          </p>
+          <input name="Aficiones4" value="Tapas" id="Tapas" type="checkbox">  
+          <label for="tapas" style="color: darkgreen;">Salir de tapas</label> 
+          <p>
+          </p>
+          <input name="Aficiones5" value="Flamenco" id="Flamenco" type="checkbox">  
+          <label for="flamenco" style="color: darkgreen;">Música flamenca</label> 
+          <p>
+          </p>
+          <input name="Aficiones6" value="Dieta" id="Dieta" type="checkbox">  
+          <label for="dieta" style="color: darkgreen;">La dieta mediterránea</label> 
+          <p>
+          </p>
+          <input name="Aficiones7" value="Descargas" id="Descargas" type="checkbox">  
+          <label for="descargas" style="color: darkgreen;">Descargas piratas online</label>
+          <p>
+          </p>  
+          <input name="Aficiones8" value="Cursos" id="Cursos" type="checkbox">  
+          <label for="cursos" style="color: darkgreen;">Hacer cursos online</label>  
+          <p>
+          </p> 
+          <label>Señale sus inclinaciones políticas</label>
+          <p>
+          </p>  
+          <select name="Politica" id="Politica">
+          <option value="Ninguna" style="color: darkgreen;">Ninguna</option>
+          <option value="Izquierda" style="color: darkgreen;">Izquierda</option>
+          <option value="Centro" style="color: darkgreen;">Centro</option>
+          <option value="Derecha" style="color: darkgreen;">Derecha</option>
+          </select>
+          <p>
+          <label for="obser">Observaciones</label>
+          </p>
+          <p>
+          <textarea name="Comentarios" id="Comentarios"></textarea>
+          </p>
+          <p>
+          <label><input name="condiciones" required="" type="checkbox"><a href="https://es.lipsum.com/feed/html">Acepto las condiciones del servicio</a></label>
+          </p>
+          </fieldset>
+          <p></p>
+          <input value="Enviar" type="submit">
+        </form>
+      </article>
+    </section>
+    <footer>
+      <p>Copyright</p>
+      <p>Social Media Links</p>
+    </footer>
+</body></html>
