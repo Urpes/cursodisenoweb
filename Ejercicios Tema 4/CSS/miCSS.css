@@ -27,7 +27,7 @@ body {
 
 body> header> h1 {
   margin: auto;
-  background-color: white;
+  background-color: whitesmoke;
   display: block;
   font-family: arial, sherif;
   font-size: 50px;
@@ -39,16 +39,12 @@ body> header> h1 {
   padding: 10px;
   border-radius: 25px;
 }
-
-nav> div> a#bordes {
-  border:  2px solid yellow;
-  padding: 10px;
-  border-radius: 10px;
+#bordes {
+background-color: yellow;
 }
-nav> div> a#bordes: hover {
-  border-color: solid pink;
+#bordes:hover {
+background-color: white;
 }
-
 footer> p {
   color:red;
 }
